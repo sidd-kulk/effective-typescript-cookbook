@@ -1,5 +1,5 @@
 
-import {statement} from './statement';
+import {StringStatement} from './statement';
 
 const plays = {
     "hamlet": { "name": "Hamlet", "type": "tragedy" },
@@ -27,14 +27,18 @@ const plays = {
     }
   ]
 
+  let statement: StringStatement;
+  beforeAll(() => {
+    statement = new StringStatement();
+  })
   describe('statement', () => {
     it('should return the statement', () => {
-        const response = statement(invoices[0], plays)
+        const response = statement.calculate(invoices[0], plays)
         expect(response.replace(/\s/g, '')).toBe(`StatementforBigCoHamlet:$650.00(55seats)AsYouLikeIt:$580.00(35seats)Othello:$500.00(40seats)Amountowedis$1,730.00Youearned47credits`);
     });
 
     it('should return blank string if invoices and plays are null', () => {
-        const response = statement(null, null)
+        const response = statement.calculate(null, null)
         expect(response).toBe('');
     });
 
@@ -45,7 +49,7 @@ const plays = {
             "othello": { "name": "Othello", "type": "tragedy" }
         }
         expect(() => {
-            statement(invoices[0], incorrectPlaysInput)
+          statement.calculate(invoices[0], incorrectPlaysInput)
         }).toThrowError(`unknown type: unknown`);
     })
   });
