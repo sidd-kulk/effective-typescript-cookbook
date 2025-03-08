@@ -1,4 +1,6 @@
-function statement(invoice, plays) {
+export function statement(invoice, plays) {
+  if(!invoice || !plays) return '';
+
   let totalAmount = 0;
   let volumeCredits = 0;
   let result = `Statement for ${invoice.customer}\n`;
@@ -10,7 +12,6 @@ function statement(invoice, plays) {
   for (let perf of invoice.performances) {
     const play = plays[perf.playID];
     let thisAmount = 0;
-
     switch (play.type) {
       case "tragedy":
         thisAmount = 40000;
@@ -69,5 +70,3 @@ const invoices = [
     ]
   }
 ]
-
-console.log(statement(invoices[0], plays))
