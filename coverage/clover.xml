@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1741436750791" clover="3.2.0">
-  <project timestamp="1741436750791" name="All files">
-    <metrics statements="34" coveredstatements="34" conditionals="11" coveredconditionals="11" methods="3" coveredmethods="3" elements="48" coveredelements="48" complexity="0" loc="34" ncloc="34" packages="1" files="1" classes="1"/>
+<coverage generated="1742040284166" clover="3.2.0">
+  <project timestamp="1742040284166" name="All files">
+    <metrics statements="39" coveredstatements="39" conditionals="11" coveredconditionals="11" methods="4" coveredmethods="4" elements="54" coveredelements="54" complexity="0" loc="39" ncloc="39" packages="1" files="1" classes="1"/>
     <file name="statement.ts" path="/Users/siddharth.kulkarni/Technical/PersonalProjects/effective-typescript-cookbook/src/refactoring/chapter_1/statement.ts">
-      <metrics statements="34" coveredstatements="34" conditionals="11" coveredconditionals="11" methods="3" coveredmethods="3"/>
+      <metrics statements="39" coveredstatements="39" conditionals="11" coveredconditionals="11" methods="4" coveredmethods="4"/>
       <line num="5" count="1" type="stmt"/>
       <line num="7" count="3" type="cond" truecount="3" falsecount="0"/>
       <line num="9" count="2" type="stmt"/>
@@ -13,31 +13,36 @@
       <line num="17" count="2" type="stmt"/>
       <line num="18" count="4" type="stmt"/>
       <line num="19" count="4" type="stmt"/>
-      <line num="21" count="3" type="stmt"/>
-      <line num="23" count="3" type="cond" truecount="1" falsecount="0"/>
-      <line num="26" count="3" type="stmt"/>
-      <line num="27" count="3" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
-      <line num="30" count="1" type="stmt"/>
-      <line num="31" count="1" type="stmt"/>
-      <line num="36" count="4" type="stmt"/>
-      <line num="37" count="4" type="cond" truecount="3" falsecount="0"/>
-      <line num="39" count="2" type="stmt"/>
-      <line num="40" count="2" type="cond" truecount="1" falsecount="0"/>
-      <line num="41" count="2" type="stmt"/>
-      <line num="43" count="2" type="stmt"/>
-      <line num="45" count="1" type="stmt"/>
-      <line num="46" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="47" count="1" type="stmt"/>
-      <line num="49" count="1" type="stmt"/>
-      <line num="50" count="1" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="35" count="3" type="stmt"/>
+      <line num="36" count="3" type="stmt"/>
+      <line num="37" count="3" type="cond" truecount="1" falsecount="0"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="43" count="4" type="stmt"/>
+      <line num="44" count="4" type="cond" truecount="3" falsecount="0"/>
+      <line num="46" count="2" type="stmt"/>
+      <line num="47" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="48" count="2" type="stmt"/>
+      <line num="50" count="2" type="stmt"/>
       <line num="52" count="1" type="stmt"/>
-      <line num="54" count="3" type="stmt"/>
+      <line num="53" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="54" count="1" type="stmt"/>
       <line num="56" count="1" type="stmt"/>
-      <line num="62" count="1" type="stmt"/>
-      <line num="82" count="1" type="cond" truecount="2" falsecount="0"/>
-      <line num="83" count="1" type="stmt"/>
-      <line num="84" count="1" type="stmt"/>
+      <line num="57" count="1" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
+      <line num="61" count="3" type="stmt"/>
+      <line num="63" count="1" type="stmt"/>
+      <line num="69" count="1" type="stmt"/>
+      <line num="89" count="1" type="cond" truecount="2" falsecount="0"/>
+      <line num="90" count="1" type="stmt"/>
+      <line num="91" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

@@ -50,6 +50,6 @@ const plays = {
         }
         expect(() => {
           statement.calculate(invoices[0], incorrectPlaysInput)
-        }).toThrowError(`unknown type: unknown`);
+        }).toThrow(`unknown type: unknown`);
     })
   });
