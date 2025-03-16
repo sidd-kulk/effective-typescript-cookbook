@@ -14,7 +14,7 @@ export class StringStatement implements Statement {
         style: "currency", currency: "USD",
         minimumFractionDigits: 2
       }).format;
-    for (let perf of invoice.performances) {
+    for (const perf of invoice.performances) {
       const play = plays[perf.playID];
       const thisAmount = calculateAmount(perf, play);
   
@@ -31,7 +31,7 @@ export class StringStatement implements Statement {
 
 function voumeCredits(invoice) {
   let volumeCredits = 0;
-  for (let perf of invoice.performances) {
+  for (const perf of invoice.performances) {
     const play = plays[perf.playID];
     volumeCredits += Math.max(perf.audience - 30, 0);
     if (PlayTypes.COMEDY === play.type) volumeCredits += Math.floor(perf.audience / 5);
@@ -65,26 +65,6 @@ const plays = {
   "as-like": { "name": "As You Like It", "type": "comedy" },
   "othello": { "name": "Othello", "type": "tragedy" }
 }
-
-const invoices = [
-  {
-    "customer": "BigCo",
-    "performances": [
-      {
-        "playID": "hamlet",
-        "audience": 55
-      },
-      {
-        "playID": "as-like",
-        "audience": 35
-      },
-      {
-        "playID": "othello",
-        "audience": 40
-      }
-    ]
-  }
-]
 
 enum PlayTypes {
   TRAGEDY = 'tragedy',

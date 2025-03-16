@@ -1,4 +1,3 @@
-import exp from "constants";
 import { GeoLocation, Location } from "./Geolocation";
 
 describe('GeoLocation Constructor', () => {
