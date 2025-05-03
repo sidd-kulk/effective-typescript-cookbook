@@ -58,39 +58,24 @@ class Queue<T> {
     find(callback: (element: T, index: number) => boolean): T {
         return this.list.find(callback)
     }
-    findIndex(callback: (element: T, index: number) => boolean): number {
-        return this.list.findIndex(callback)
-    }
+
     some(callback: (element: T, index: number) => boolean): boolean {
         return this.list.some(callback)
     }
+    
     every(callback: (element: T, index: number) => boolean): boolean {
         return this.list.every(callback)
     }
+    
     includes(element: T): boolean {
         return this.list.includes(element)
     }
+
     indexOf(element: T): number {
         return this.list.indexOf(element)
     }
-    lastIndexOf(element: T): number {
-        return this.list.lastIndexOf(element)
-    }
-    slice(start: number, end: number): T[] {
-        return this.list.slice(start, end)
-    }
-    splice(start: number, deleteCount: number, ...items: T[]): T[] {
-        return this.list.splice(start, deleteCount, ...items)
-    }
+
     join(separator: string): string {
         return this.list.join(separator)
-    }
-    reverse(): T[] {
-        return this.list.reverse()
-    }
-    sort(compareFn: (a: T, b: T) => number): T[] {
-        // return a new array
-        return this.list.slice().sort(compareFn)
-
     }
 }
