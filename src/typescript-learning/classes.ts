@@ -1,7 +1,7 @@
 
 
 class Queue<T> {
-    private list: T[];
+    protected list: T[];
 
     constructor() {
         this.list = []
@@ -77,5 +77,31 @@ class Queue<T> {
 
     join(separator: string): string {
         return this.list.join(separator)
+    }
+}
+
+class PriorityQueue<T> extends Queue<T> {
+    private priorityList: number[];
+
+    constructor() {
+        super()
+        this.priorityList = []
+    }
+
+    add(element: T): void;
+    add(element: T, priority?: number): void {
+        this.list.push(element)
+        this.priorityList.push(priority ?? 0)
+    }
+
+    pop(): T {
+        if (this.list.length === 0) {
+            return null
+        }
+        const index = this.priorityList.indexOf(Math.max(...this.priorityList))
+        const element = this.list[index]
+        this.list.splice(index, 1)
+        this.priorityList.splice(index, 1)
+        return element
     }
 }
